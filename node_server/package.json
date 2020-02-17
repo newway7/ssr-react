@@ -27,6 +27,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "express": "^4.17.1",
     "express-http-proxy": "^1.6.0",
+    "isomorphic-style-loader": "^5.1.0",
     "koa": "^2.11.0",
     "koa-router": "^8.0.7",
     "koa-static": "^5.0.0",
@@ -45,6 +46,9 @@
     "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.8.4"
+    "@babel/preset-env": "^7.8.4",
+    "css-loader": "^3.4.2",
+    "isomorphic-style-loader": "^5.1.0",
+    "style-loader": "^1.1.3"
   }
 }
