@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import Helmet from 'react-helmet'
+
 import { getHomeList } from "./store/actions";
 
 import Header from "../../components/Header";
@@ -13,6 +15,11 @@ class Home extends Component {
 
   render() {
     return (
+      <>
+      <Helmet>
+      <title>newway 测试服务端渲染</title>
+      <meta name="description" content="newway 测试服务端渲染"/>
+    </Helmet>
       <div>
         <Header />
         {this.getList()}
@@ -25,6 +32,7 @@ class Home extends Component {
           click
         </button>
       </div>
+      </>
     );
   }
 
